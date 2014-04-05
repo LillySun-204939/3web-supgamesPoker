@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    ##head##
+    <title>Room ##roomName##</title>
+</head>
+<body>
+##header##
+##message##
+<section>
+    <h2>Room ##roomName##</h2>
+    <aside>
+        <div class="scoring">
+            <h3>Money</h3>
+            <ul id="playing-score">##score##</ul>
+        </div>
+        <div class="chat">
+            <h3>Chat</h3>
+            <ul id="playing-chat">##chat##</ul>
+            <form id="sendToChatForm">
+                <label for="sendToChat">Message</label>
+                <input type="text" name="sendToChat" id="sendToChat"/>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </aside>
+    <div id="playing">
+        <div id="playing-bet">
+            <h3>Current Bet</h3>
+            ##currentbet##
+        </div>
+        <canvas id="current-done" width="290" height="120"></canvas>
+        <canvas id="my-cards" width="190" height="120"></canvas>
+        <form id="playing-actions">
+            Actions :
+            <button id="playing-check" type="button" class="check">Check</button>
+            <button id="playing-fold" type="button" class="fold">Fold</button>
+            <input type="number" name="betBy" id="betBy" />
+            <button type="submit" class="bet">Bet</button>
+        </form>
+        <div class="clear"></div>
+    </div>
+</section>
+##footer##
+<script type="text/javascript">
+    window.onload = function() {
+        subscribe('##cookieName##', '##roomId##');
+        initChat('##cookieName##', '##roomId##');
+        initPoker('##cookieName##', '##roomId##');
+
+        //eval is evil but prevent syntax error through MVC homemade.
+        rewritePokerSuit('current-done', eval("##deskcards##"));
+        rewritePokerSuit('my-cards', eval("##mycards##"));
+    };
+</script>
+</body>
+</html>

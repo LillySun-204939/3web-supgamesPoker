@@ -1,0 +1,286 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* For project */
+
+body {
+    padding: 10px;
+    font-family: sans-serif;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+
+}
+
+body > header {
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
+}
+
+body > header nav li {
+    display: inline-block;
+}
+
+body > header nav li a:before {
+    content: "[";
+}
+
+body > header nav li a:after {
+    content: "]";
+}
+
+body > header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+aside {
+    float: right;
+    width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.chat, .scoring {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.scoring {
+    margin-bottom: 1px;
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+}
+
+#my-cards {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#current-done {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+}
+
+#playing-actions {
+    position: absolute;
+    bottom: 55px;
+    right: 240px;
+}
+
+.scoring li:before {
+    content: '- ';
+}
+
+.chat {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+}
+
+.chat ul {
+    overflow: scroll;
+    height: 350px;
+}
+
+#playing {
+    background: rgba(0, 100, 0, 0.6);
+    width: 75%;
+    position: relative;
+    padding: 80px 0 0;
+    border-radius: 10px;
+    height: 445px;
+}
+
+#ladder {
+    width: 75%;
+}
+
+#playing h3 {
+    color: darkred;
+}
+
+#playing #playing-bet {
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    height: 90px;
+    width: 25%;
+    border-radius: 0 10px 0 0;
+    border: 1px solid darkred;
+
+}
+
+body > footer {
+    border-top: 1px solid gray;
+    margin-top: 5px;
+    padding-top: 5px;
+    clear: both;
+}
+
+label {
+    font-weight: bold;
+}
+
+label:after {
+    content: " : ";
+}
+
+input, button, select {
+    border: 1px solid gray;
+    padding: 3px;
+    border-radius: 3px;
+    background: white;
+}
+
+table {
+    border: 1px solid darkred;
+    width: 100%;
+}
+
+table td:first-child, table th:first-child {
+    width: 50px;
+}
+
+table td {
+    text-align: center;
+}
+
+table th, table td {
+    padding: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table thead {
+    background: #eee;
+    line-height: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    border-bottom: 1px black dotted;
+
+}
+
+p.error, p.success {
+    margin: 15px;
+    background: #eee;
+    padding: 10px;
+}
+
+.error, .fold {
+    color: red;
+}
+
+#playing #playing-bet .fold {
+    color: rgba(85, 85, 85, 0.3);
+}
+
+.success, .check {
+    color: green;
+}
+
+.bet {
+    color: blue;
+}
+
+.with-background {
+    background: url('./img/bg.jpg') no-repeat center center;
+    background-size: 100%;
+    padding-top: 50px;
+    min-height: 400px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.with-background > p, .with-background > form, .with-background > ul {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.with-background > h2 {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -50px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+}

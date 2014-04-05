@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    ##head##
+    <title>Registration</title>
+</head>
+<body>
+##header##
+<section class="with-background">
+    <h2>Registration</h2>
+    ##return##
+    <form method="post">
+        <p>
+            <label for="username">
+                Username
+            </label>
+            <input type="text" name="username" id="username" value="##form_username##" placeholder="Username" required="required" />
+        </p>
+        <p>
+            <label for="password">
+                Password
+            </label>
+            <input name="password" id="password" type="password" value="##form_password##" placeholder="Password" required="required" />
+        </p>
+        <p>
+            <label for="languages">
+                Language
+            </label>
+            ##language_list##
+        </p>
+        <p>
+            <button type="submit">Register</button>
+        </p>
+    </form>
+</section>
+##footer##
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    ##head##
+    <title>User's stats</title>
+</head>
+<body>
+##header##
+<section>
+    <aside>
+        <h3>Sort</h3>
+        <ul>
+            <li>By time played : <a href="?by=timePlayed&order=1">[ASC]</a> - <a href="?by=timePlayed&order=-1">[DESC]</a></li>
+            <li>By number of games done : <a href="?by=nbrGamesDone&order=1">[ASC]</a> - <a href="?by=nbrGamesDone&order=-1">[DESC]</a></li>
+            <li>By average of game duration : <a href="?by=avgGamesDuration&order=1">[ASC]</a> - <a href="?by=avgGamesDuration&order=-1">[DESC]</a></li>
+            <li>By number of games won : <a href="?by=nbrGamesWon&order=1">[ASC]</a> - <a href="?by=nbrGamesWon&order=-1">[DESC]</a></li>
+            <li>By rounds before win : <a href="?by=nbrRoundsBeforeWin&order=1">[ASC]</a> - <a href="?by=nbrRoundsBeforeWin&order=-1">[DESC]</a></li>
+            <li>By rounds before loose: <a href="?by=nbrRoundsBeforeLoose&order=1">[ASC]</a> - <a href="?by=nbrRoundsBeforeLoose&order=-1">[DESC]</a></li>
+        </ul>
+    </aside>
+    <div id="ladder">
+        <table>
+            ##array##
+        </table>
+    </div>
+</section>
+##footer##
+</body>
+</html>

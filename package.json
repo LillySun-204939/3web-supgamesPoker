@@ -1,0 +1,8 @@
+{
+    "name": "supGamesPoker",
+    "version": "1.0.0",
+    "dependencies": {
+        "mongodb": "~1.4",
+        "socket.io": "~1.0"
+    }
+}

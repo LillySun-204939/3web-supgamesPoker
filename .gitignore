@@ -1,2 +1,5 @@
-config.js.dist
+config.js
 node_modules/*
+.idea
+*.iml
+.DS_Store

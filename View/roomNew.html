@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    ##head##
+    <title>New room</title>
+</head>
+<body>
+##header##
+<section class="with-background">
+    <h2>New room</h2>
+    ##return##
+    <form method="post">
+        <p>
+            <label for="name">
+                Room name
+            </label>
+            <input type="text" name="name" id="name" value="##form_name##" placeholder="Room name" required="required"/>
+        </p>
+        <p>
+            <label for="languages">
+                Language
+            </label>
+            ##language_list##
+        </p>
+        <p>
+            <button type="submit">Create a room</button>
+        </p>
+    </form>
+</section>
+##footer##
+</body>
+</html>
